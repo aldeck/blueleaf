@@ -1,1 +1,19 @@
-The Blue Leaf Book is a documentation project for the Haiku operating system using the GitHub Pages system / Jekyll
+
+
+Blue Leaf Book Contents
+=====================
+
+This is the source code for the Blue Leaf Book contents. It is licensed under the
+Creative Commons Attribution-Non Commercial-Share Alike 3.0 license. I hope you
+enjoy it, I hope it helps you understand and use the Haiku operating system.
+
+
+Errata
+=====================
+If you see anything that is technically wrong or otherwise in need of correction,
+please message me to inform me.
+
+
+Translation
+=====================
+If you wish to translate the book, please clone the repository and put your translation into the appropriate subdirector (ie: 'it' for Italian and so forth) and send me (aldeck) a pull request.
