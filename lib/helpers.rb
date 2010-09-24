@@ -21,6 +21,12 @@ module BlueLeafHelpers
     end
   end
 
+  def all_items_with_same_lang_as(item)
+    @items.select do |i| 
+      i[:page_lang] == item[:page_lang]
+    end
+  end
+
   LANGUAGE_CODE_TO_NAME_MAPPING = {
     'en' => 'English',
     'fr' => 'Français'

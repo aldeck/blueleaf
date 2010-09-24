@@ -8,6 +8,10 @@ a {
   text-decoration: none;
 }
 
+.here {
+  color: #616384;
+}
+
 #logo {
   position: absolute;
   top: 20px;

@@ -32,8 +32,9 @@ route '*' do
     case item[:extension]
       when 'markdown'
         # /1-fr-utiliser-haiku/ -> /fr/utiliser-haiku/index.html 
-        #puts item.identifier,  language_code_of(item)
+        puts "id #{item.identifier}  lang #{language_code_of(item)} name #{name_of(item)}"
         item[:page_code] = page_code_of(item)
+        item[:page_lang] = language_code_of(item)
         '/' + language_code_of(item) + '/' + name_of(item) + '/' + 'index.html'
       when 'css'
         item.identifier.chop + '.css'

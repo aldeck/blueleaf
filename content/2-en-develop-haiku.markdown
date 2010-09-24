@@ -1,14 +1,9 @@
 ---
 layout: default
 title: Develop Haiku
+about: Here you will find all you need to know to setup and use Haiku
 ---
-# Develop Haiku #
-
-*Here you will find all you need to know to setup and use Haiku*
-
 ## Try Haiku ##
-
-![Logo](/images/blueleaf.png)
 
 You can try Haiku on real hardware using the [Install/Live CD][] (or an [USB Stick][], more info in the [Installation Guide][].
 Or you can try it through virtualization using QEMU, VirtualBox or VMware, have a look at the [Haiku in a Virtual Machine][] page.

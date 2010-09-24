@@ -1,11 +1,8 @@
 ---
 layout: default
-title: Develop Haiku
+title: Developer Haiku
+about: Ici vous trouverez tout ce dont vous avez besoin pour preparer et utiliser Haiku
 ---
-# Developer Haiku #
-
-*Ici vous trouverez tout ce dont vous avez besoin pour preparer et utiliser Haiku*
-
 ## Essayer Haiku ##
 
 Vous pouvez essayer Haiku sur une machine réele [Install/Live CD][] (ou une [Cle USB][], plus d'info dans le [Guide d'installation][].

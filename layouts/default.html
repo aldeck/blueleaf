@@ -12,14 +12,25 @@
     </div>
     Page code :<%= @item[:page_code] %>
     <div id="main">
+      <h1><%= @item[:title] %></h1><em>(<%= @item[:about] %>)</em>
       <%= yield %>
     </div>
     <div id="sidebar">      
-      <h2>TOC</h2>
-      <ul>
-        <li><a href="/">Todo</a></li>
-        <li><a href="/">Todo</a></li>
-      </ul>      
+      <h2>Content</h2>
+      <% all_items_with_same_lang_as(@item).each do |t| %>
+        <li>
+          <a href="<%= t.path %>"
+             lang="<%= language_code_of(t) %>"
+             hreflang="<%= language_code_of(t) %>"
+             class="<% if t == @item %>here<% else %><% end %>">
+            <% if t[:title] != nil %>
+              <%= t[:title] %>
+            <% else %>
+              <%= t.identifier.chop %>
+            <% end %>            
+          </a>          
+        </li>
+      <% end %>
       <h2>Translations</h2>
       <ul>
       <% translations_of(@item).each do |t| %>
